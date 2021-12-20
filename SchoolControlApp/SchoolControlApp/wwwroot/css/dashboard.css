@@ -1,0 +1,361 @@
+:root {
+  --primary: #53c1ff;
+  --secondary: #37c771;
+  --orange: #ff7d61;
+  --red: #d82424;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  padding-left: 28rem;
+}
+
+/* common style end */
+
+header {
+  position: fixed;
+  overflow: scroll;
+  overflow-x: hidden;
+  left: 0;
+  z-index: 10;
+  height: 100%;
+  width: 27rem;
+  background: #5732a5;
+  display: flex;
+  align-items: center;
+
+  flex-flow: column;
+  font-family: "Roboto", sans-serif;
+  bottom: 0;
+}
+.navbar {
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+.navbar .item-list {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  margin: 25px 0;
+
+  width: 100%;
+  display: block;
+  position: relative;
+  transition: all 0.3s ease;
+}
+.navbar .item-list .icon-list {
+  width: 30px;
+  height: 30px;
+  transition: all 0.3s ease;
+}
+.homepage img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+.down-arrow {
+  width: 15px !important;
+  height: 15px !important;
+  margin-top: 7px;
+  cursor: pointer;
+}
+.homepage > div {
+  width: 213px;
+}
+.homepage .top {
+  margin-top: 20%;
+}
+
+.navbar li a {
+  position: relative;
+  width: 150px;
+  margin: 10px 10px 0px 10px;
+  color: #fff;
+  font-size: 16px;
+}
+
+.dashboard-dropdown-menu {
+  padding-left: 30px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s ease;
+  height: 0;
+}
+.dashboard-dropdown-menu li {
+  margin: 10px;
+}
+
+.dashboard-dropdown-menu li a {
+  color: #d9c7ff;
+  font-style: normal;
+  font-weight: normal;
+}
+.dashboard-dropdown-menu.active {
+  opacity: 1;
+  visibility: visible;
+}
+.active.menu1 {
+  height: 150px;
+}
+.active.menu2 {
+  height: 100px;
+}
+.active.menu3 {
+  height: 20px;
+}
+.active.menu4 {
+  height: 70px;
+}
+.active.menu5 {
+  height: 140px;
+}
+.active.menu6 {
+  height: 30px;
+}
+.active.menu7 {
+  height: 120px;
+}
+.active.menu8 {
+  height: 60px;
+}
+.active.menu9 {
+  height: 30px;
+}
+
+.dashboard-dropdown-menu.active li {
+  margin: 10px;
+}
+
+.navbar li .drop {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+  cursor: pointer;
+  font-size: 16px;
+}
+.homepage {
+  /* position: fixed;
+    top: 80px; */
+  color: #fff;
+  font-size: 16px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+  border-bottom: 1px solid #fff;
+}
+section {
+  padding: 1rem 5%;
+  min-height: 100vh;
+}
+
+.topbar {
+  color: #fff;
+  position: fixed;
+  height: 60px;
+
+  top: 0;
+  left: 0;
+  background-color: #5732a5;
+  z-index: 99999;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.topbar .logo {
+  width: 27rem;
+  background-color: #432485;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.topbar .logo {
+  font-size: 20px;
+}
+
+.topbar .user-info {
+  font-size: 16px;
+  margin-right: 40px;
+  transition: all 0.3s ease !important;
+}
+.user-info a {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: all 0.3s ease !important;
+}
+.setting-dropdown {
+  width: 150px;
+
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 60px;
+  background: #8055da;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 0px 0px 5px 5px;
+
+}
+.open-dropdown {
+  padding: 20px;
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.3s ease;
+}
+.setting-dropdown li:last-child {
+  margin-top: 10px;
+}
+
+.topbar .user-info img {
+  width: 17px;
+  height: 17px;
+  margin-left: 7px;
+}
+.rotate {
+  transform: rotate(180deg);
+  transition: all 0.3s ease;
+}
+
+.home {
+  color: black;
+  margin-top: 80px;
+  padding: 0 10px;
+}
+
+/* cards  start*/
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  width: 840px;
+}
+
+.cards .card {
+  padding: 20px;
+  width: 223px;
+  height: 100px;
+  color: #fff;
+  margin-top: 20px;
+  margin-right: 20px;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cards .card:nth-child(1) {
+  background-color: var(--primary);
+}
+
+.cards .card:nth-child(2) {
+  background-color: var(--secondary);
+}
+.cards .card:nth-child(3) {
+  background-color: var(--orange);
+}
+.cards .card p {
+  width: 140px;
+}
+
+.cards .card:not(:last-child) {
+  margin-right: 53px;
+}
+
+.cards .card span {
+  font-size: 25px;
+  align-items: center;
+  display: flex;
+}
+.cards .card a {
+  display: flex;
+  color: #fff;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+}
+/* start end */
+
+/* form start*/
+
+.form-container {
+  display: flex;
+  align-items: center;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  justify-content: space-between;
+  color: #250d57;
+}
+
+.search input {
+  border: 1px solid #5732a5;
+  border-radius: 5px;
+  padding: 5px 4px;
+  width: 150px;
+}
+select,
+.date {
+  border: 1px solid #5732a5;
+  padding: 5px 4px;
+  border-radius: 5px;
+
+  width: 150px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* form end */
+
+/* tabel start*/
+table {
+  width: 100%;
+  font-size: 16px;
+}
+
+table,
+tr,
+th,
+td {
+  border: 1px solid #5732a5;
+  border-collapse: collapse;
+  background: #f0f0f0;
+  padding: 5px;
+  border-spacing: 5px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  color: #250d57;
+
+  text-align: center;
+}
+
+.danger {
+  color: var(--red);
+}
+
+/* table end */

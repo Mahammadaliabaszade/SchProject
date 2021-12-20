@@ -1,0 +1,50 @@
+.logout {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+ 
+  }
+  .logout-container {
+    border: 2px solid #5732a5 !important;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 200px;
+    padding: 40px;
+    justify-content: center;
+  }
+  .logout-container {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 18px;
+  
+    color: #422c47;
+  }
+  
+  .logout-confirm-buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+  }
+  .logout-confirm-buttons button{
+      background: #5732A5;
+      color: #fff;
+      padding:6px ;
+      width: 80px;
+  }
+  
+  .logout-yes, .logout-no{
+      padding: 7px;
+      background: #5732A5;
+      border-radius: 20px;
+      color: #fff;
+      font-size: 16px;
+      width: 80px;
+  }

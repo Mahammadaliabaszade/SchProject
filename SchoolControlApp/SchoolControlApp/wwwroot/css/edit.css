@@ -1,0 +1,64 @@
+.edit-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  border: 1px solid #351d68;
+}
+.select-from {
+  display: flex;
+}
+.select-from label {
+  width: 20%;
+}
+.select-from select {
+  width: 285px;
+  border-radius: 1px;
+}
+.select-from {
+  margin: 15px 0;
+}
+
+.edit_ button {
+  width: 285px;
+  border-radius: 1px !important;
+}
+.edit label {
+  width: 39% !important;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px !important;
+  line-height: 15px;
+  color: #351d68;
+}
+
+.select-from label {
+  width: 39%;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  color: #351d68;
+}
+
+.back-icon img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+
+.settings-button {
+  display: flex;
+  justify-content: center;
+  margin-left: 30%;
+}
+.btn-setting {
+  background: #5732a5;
+  border-radius: 5px;
+  width: 150px;
+  color: #fff;
+  padding: 5px;
+  cursor: pointer;
+}

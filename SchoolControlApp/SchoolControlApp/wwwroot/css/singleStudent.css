@@ -1,0 +1,110 @@
+.single-student-container {
+  height: 80px;
+  border: 1px solid #5732a5;
+  display: flex;
+}
+
+.single-student-profil {
+  display: flex;
+  align-items: center;
+  border-right: 1px solid #5732a5;
+  width: 100%;
+  padding: 0 10px;
+}
+
+.single-student-profil h2 {
+  margin-left: 14px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  color: #351d68;
+}
+
+.single-student-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  border-right: 1px solid #5732a5;
+}
+
+.missing,
+.late,
+.status {
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.missing span,
+.late span,
+.status span {
+  margin-right: 10px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  color: #351d68;
+  
+}
+
+.missing p,
+.late p {
+    font-size: 18px;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background: #d65b5b;
+  border-radius: 50%;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+}
+
+.status p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  border-radius: 50%;
+}
+
+.single-student-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.single-student-date {
+  border: 1px solid #5732a5;
+  padding: 4px 4px;
+  border-radius: 5px;
+  margin: 5px 0;
+  width: 150px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.single-edit-btn {
+  margin-bottom: 5px ;
+  width: 150px;
+  background: #5732a5;
+  border-radius: 5px;
+  padding: 7px;
+  color: #fff;
+  cursor: pointer;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+}

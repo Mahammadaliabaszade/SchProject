@@ -1,0 +1,51 @@
+.notFound {
+  width: 548px;
+  height: 276px;
+  background: #e7e7e7;
+}
+
+.notFound-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.notFound {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.notFound h4 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 35px;
+
+  color: #8e859f;
+}
+
+.error_btn {
+  margin-top: 40px;
+}
+
+.return-btn {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  padding: 10px;
+  background: #5732a5;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  transition: .3s ease;
+  border: 1px solid #5732a5;
+}
+
+.return-btn:hover{
+    background-color: #fff;
+    color: black;
+}

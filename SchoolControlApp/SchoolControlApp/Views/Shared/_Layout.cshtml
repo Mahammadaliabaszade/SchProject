@@ -1,0 +1,171 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Face control</title>
+    <!-- font awesome cdn link  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sen:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="~/css/dashboard.css">
+    <link rel="stylesheet" href="~/css/common.css">
+    @RenderSection("NotFoundCSS",false)
+</head>
+<body>
+    <!-- header section starts  -->
+    <div class="topbar ">
+        <div class="logo">
+            T.S.X.B.D.P.T
+        </div>
+        <div class="user-info">
+            <a href="#" class="set-drop">
+                user@gmail.com <img class="drop" src="~/icons/drop.svg" alt="">
+                <ul class="setting-dropdown" id="set-dropdown">
+                    <li><a href="/settings.html">Profil ayarları</a></li>
+                    <li><a href="/logout.html">Cıxış</a></li>
+                </ul>
+            </a>
+        </div>
+    </div>
+    <header>
+        <div class="homepage">
+            <div class="d-flex align-center top">
+                <a href="./dashboard.html" class="d-flex align-center white">
+                    <img src="~/icons/homee.svg" alt="">
+                    <p>ANA SƏHİFƏ</p>
+                </a>
+            </div>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li class="item-list">
+                    <div class="d-flex align-center">
+                        <img src="~/icons/user.svg" class="icon-list" alt="" />
+                        <a href="./teachers.html">İŞCİLƏR </a>
+                        <img class="drop" id="down-arrow" src="~/icons/drop.svg" alt="" />
+                    </div>
+                    <ul class="dashboard-dropdown-menu menu1" id="sub-dropdown">
+                        <li><a href="#">Müəllimlər</a></li>
+                        <li><a href="#">Muhafizəcilər</a></li>
+                        <li><a href="#">Aşbazlar</a></li>
+                        <li><a href="#">Xadiməcilər</a></li>
+                        <li><a href="#">Gecikənlər</a></li>
+                        <li><a href="#">Hərarəti yüksək olanlar</a></li>
+                    </ul>
+                </li>
+                <li class="item-list">
+                    <div class="d-flex align-center">
+                        <img src="~/icons/students.svg" class="icon-list" alt="" />
+                        <a href="./teachers.html">ŞAGİRDLƏR </a>
+                        <img class="drop" id="down-arrow" src="~/icons/drop.svg" alt="" />
+                    </div>
+                    <ul class="dashboard-dropdown-menu menu2" id="sub-dropdown">
+                        <li><a href="#">Bütün şagirdlər</a></li>
+                        <li><a asp-controller="Home" asp-action="Late">Gecikənlər</a></li>
+                        <li><a asp-controller="Home" asp-action="Missing">Qayıb limitini aşanlar</a></li>
+                        <li><a asp-controller="Home" asp-action="Temperature">Hərarəti yüksək olanlar</a></li>
+                    </ul>
+                </li>
+                <li class="item-list">
+                    <div class="d-flex align-center">
+                        <img src="~/icons/ixtisas.png" class="icon-list" alt="" />
+                        <a href="./teachers.html">IXTISAS </a>
+                        <img class="drop" id="down-arrow" src="~/icons/drop.svg" alt="" />
+                    </div>
+                    <ul class="dashboard-dropdown-menu menu3" id="sub-dropdown">
+                        <li><a href="#">Bütün ixtisaslar</a></li>
+                    </ul>
+                </li>
+                <li class="item-list">
+                    <div class="d-flex align-center">
+                        <img src="~/icons/corpus.svg" class="icon-list" alt="" />
+                        <a href="./teachers.html">KORPUS </a>
+                        <img class="drop" id="down-arrow" src="~/icons/drop.svg" alt="" />
+                    </div>
+                    <ul class="dashboard-dropdown-menu menu4" id="sub-dropdown">
+                        <li><a href="#">5 № Korpus</a></li>
+                        <li><a href="#">2 № Korpus</a></li>
+                        <li><a href="#">1 № Korpus</a></li>
+                    </ul>
+                </li>
+                <li class="item-list">
+                    <div class="d-flex align-center">
+                        <img src="~/icons/course.svg" class="icon-list" alt="" />
+                        <a href="./teachers.html">KURS </a>
+                        <img class="drop" id="down-arrow" src="~/icons/drop.svg" alt="" />
+                    </div>
+                    <ul class="dashboard-dropdown-menu menu5" id="sub-dropdown">
+                        <li><a href="#">1 Kurs</a></li>
+                        <li><a href="#">2 Kurs</a></li>
+                        <li><a href="#">3 Kurs</a></li>
+                        <li><a href="#">4 Kurs</a></li>
+                        <li><a href="#">1 il</a></li>
+                        <li><a href="#">6 ay</a></li>
+                    </ul>
+                </li>
+                <li class="item-list">
+                    <div class="d-flex align-center">
+                        <img src="~/icons/data.svg" class="icon-list" alt="" />
+                        <a href="./teachers.html">TƏHSİL BAZASI </a>
+                        <img class="drop" id="down-arrow" src="~/icons/drop.svg" alt="" />
+                    </div>
+                    <ul class="dashboard-dropdown-menu menu6" id="sub-dropdown">
+                        <li><a href="#">Ümumi orta </a></li>
+                        <li><a href="#">Tam orta</a></li>
+
+                    </ul>
+                </li>
+                <li class="item-list">
+                    <div class="d-flex align-center">
+                        <img src="~/icons/time.svg" class="icon-list" alt="" />
+                        <a href="./teachers.html">TƏHSİL MÜDDƏTİ </a>
+                        <img class="drop" id="down-arrow" src="~/icons/drop.svg" alt="" />
+                    </div>
+                    <ul class="dashboard-dropdown-menu menu7" id="sub-dropdown">
+                        <li><a href="#">1 il</a></li>
+                        <li><a href="#">2 il</a></li>
+                        <li><a href="#">3 il</a></li>
+                        <li><a href="#">4 il</a></li>
+                        <li><a href="#">6 ay</a></li>
+                    </ul>
+                </li>
+                <li class="item-list">
+                    <div class="d-flex align-center">
+                        <img src="~/icons/level.svg" class="icon-list" alt="" />
+                        <a href="./teachers.html">TƏHSİL SƏVİYYƏSİ </a>
+                        <img class="drop" id="down-arrow" src="~/icons/drop.svg" alt="" />
+                    </div>
+                    <ul class="dashboard-dropdown-menu menu8" id="sub-dropdown">
+                        <li><a href="#">İlk peşə</a></li>
+                        <li><a href="#">Texniki peşə</a></li>
+                        <li><a href="#">Yüksək texniki peşə</a></li>
+                    </ul>
+                </li>
+                <li class="item-list">
+                    <div class="d-flex align-center">
+                        <img src="~/icons/payment.svg" class="icon-list" alt="" />
+                        <a href="./teachers.html">TƏHSİL ÖDƏNİŞİ </a>
+                        <img class="drop" id="down-arrow" src="~/icons/drop.svg" alt="" />
+                    </div>
+                    <ul class="dashboard-dropdown-menu menu9" id="sub-dropdown">
+                        <li><a href="#">Dövlət hesabına</a></li>
+                        <li><a href="#">Ödənişli əsaslarla</a></li>
+
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <!-- header section ends -->
+    @RenderBody()
+    <script src="~/js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+.forget-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  .forget-container:after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #353535;
+    width: 100%;
+    height: 100%;
+  }
+  .alert{
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 600;
+      text-align: center;
+      background-color: #FFFFCC;
+      color: black;
+      padding: 10px;
+      border-radius: 4px;
+  }
+.forget-cont{
+    height: 219px;
+}

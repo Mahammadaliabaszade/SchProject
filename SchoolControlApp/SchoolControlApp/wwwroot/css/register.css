@@ -1,0 +1,16 @@
+.back-arrow{
+    width: 100%;
+    margin-left: 40px;
+
+
+}
+.back-arrow a{
+    display: flex;
+    align-items: center;
+}
+.back-arrow img{
+    margin-right: 10px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+}
